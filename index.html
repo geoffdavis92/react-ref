@@ -5,19 +5,37 @@
 	<meta charset="UTF-8">
 	<title>React Ref: Attributes</title>
 	<script src="jquery/dist/jquery.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
 	<style>
 		@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,700,300);
 		body{font-family: 'Open Sans',serif;}
 		a:hover,button:hover {text-decoration: none;}
 		*:focus {outline: none !important;text-decoration: none;}
+		header {
+			box-shadow: 0 3px 7px rgba(150,150,150,.75);
+		}
+		header p {color: white;}
 		.styled {background-color: #131311;color: #00cfff;padding: 10px;margin: 0;}
-		footer.styled {margin-top: 25px;}
+		footer.styled {margin-top: 25px;box-shadow: 0 -3px 7px rgba(150,150,150,.75);}
 		footer a {color: #00cfff;font-size: 18px;font-weight: 200;}
 		footer a:hover {color: #00efff;}
-		header p {color: white;}
+		div.row.listRow {
+			padding: 10px;
+		}
 		span.glyphicon {font-size: .75em;}
+		li{padding: 2px;}
 		li::before {content: attr(data-before);}
+		li:hover{
+			font-size: 18px;
+			padding: 5px;
+			box-shadow: 0 0 12px 4px rgba(150,150,150,.5);
+			text-align: center;
+			cursor: default;
+		}
+		li:hover::before{
+			content:none;
+		}
 	</style>
 </head>
 <body>
