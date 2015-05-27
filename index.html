@@ -3,7 +3,10 @@
 <head>
 	<base href="bower_components/">
 	<meta charset="UTF-8">
-	<title>React Ref: Attributes</title>
+	<meta name="description" content="A Quick reference sheet for all React.js translations of supported HTML5 elements and attributes.">
+	<meta name="keywords" content="ReactJS,React.js,react,js,javascript,components,flux,frameworks">
+	<meat name="author" content="@geoffdavis92">
+	<title>React Reference: Quick reference to all React.js-supported Elements and Attributes</title>
 	<script src="jquery/dist/jquery.js"></script>
 	<script src="bootstrap/dist/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
@@ -15,8 +18,18 @@
 		header {
 			box-shadow: 0 3px 7px rgba(150,150,150,.75);
 		}
-		header p {color: white;}
+		header p:first-of-type {color: white;padding-top:6px;}
 		.styled {background-color: #131311;color: #00cfff;padding: 10px;margin: 0;}
+		header a.btn-outline {
+			color: #00cfff;
+			border: 1px solid #00cfff;
+			background-color: rgba(0,207,255,0);
+		}
+		header a.btn-outline:hover {
+			color: rgba(0,207,255,.9);
+			border-color: rgba(0,207,255,.9);
+			background-color: rgba(0,81,100,.17);
+		}
 		footer.styled {margin-top: 25px;box-shadow: 0 -3px 7px rgba(150,150,150,.75);}
 		footer a {color: #00cfff;font-size: 18px;font-weight: 200;}
 		footer a:hover {color: #00efff;}
@@ -39,9 +52,12 @@
 	</style>
 </head>
 <body>
-	<header class="styled text-center">
+	<header class="styled text-center row">
 		<h1>React Reference</h1>
-		<p>Reference lists for React's </p>
+		<p class="col-md-12 text-center">Reference lists for React's supported Elements/Attributes</p>
+		<p class="col-md-4"></p>
+		<p class="col-md-4 center-block text-center"><a href="http://facebook.github.io/react/docs/tags-and-attributes.html" class="btn btn-outline form-control">Source</a></p>
+		<p class="col-md-4"></p>
 	</header>
 	<div class="container">
 		<div class="row listRow">
